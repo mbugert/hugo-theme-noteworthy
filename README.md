@@ -1,3 +1,7 @@
+Forked from https://github.com/kimcc/hugo-theme-noteworthy with minor modifications from my side:
+* Move description from page title into navigation
+
+
 # Noteworthy
 
 Noteworthy is a minimalist Hugo theme for writers and bloggers.

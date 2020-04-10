@@ -1,5 +1,10 @@
 <header>
     <div class="site-title">
         <a href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
-    </div>  
+    </div>
+    {{ if isset .Site.Params "description" }}
+    <div class="description">
+        <p>{{ .Site.Params.Description | markdownify }}</p>
+    </div>
+    {{ end }}
 </header>
