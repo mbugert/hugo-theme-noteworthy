@@ -5,5 +5,5 @@
 	<p><a href="https://github.com/mbugert/hugo-theme-noteworthy" target="_blank" rel="noopener">Custom Noteworthy theme</a><p>
 	
 	{{ $script := resources.Get "js/main.js" | minify | fingerprint -}}
-	<script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }}></script>
+	<script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
 </footer>
