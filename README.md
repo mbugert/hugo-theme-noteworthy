@@ -1,6 +1,7 @@
 Forked from https://github.com/kimcc/hugo-theme-noteworthy with minor modifications from my side:
 * Move description from page title into navigation
-
+* Color all links in the article body
+* Personal touches in the navigation
 
 # Noteworthy
 

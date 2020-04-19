@@ -336,7 +336,12 @@ nav {
 }
 
 .article-figure {
-    margin: 0 0 1em;
+    margin: 1.5em 0em 2.5em 0em;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
 }
 
 .article-image {
@@ -531,23 +536,23 @@ footer {
 }
 .identity-bar div:nth-child(1) {
     background-color: $col-1;
-    height: 10px;
+    height: 14px;
 }
 .identity-bar div:nth-child(2) {
     background-color: $col-2;
-    height: 15px;
+    height: 19px;
 }
 .identity-bar div:nth-child(3) {
     background-color: $col-3;
-    height: 16px;
+    height: 20px;
 }
 .identity-bar div:nth-child(4) {
     background-color: $col-4;
-    height: 15px;
+    height: 19px;
 }
 .identity-bar div:nth-child(5) {
     background-color: $col-5;
-    height: 2px;
+    height: 6px;
 }
 
 // BREAKPOINTS
