@@ -8,16 +8,20 @@
     // TOP NAV
     nav {
         position: fixed;
-        overflow-y: scroll;
+        overflow-y: auto;
         height: 100%;
         top: 0;
-        left: 36px;
-        width: 240px;
-        padding: 0px;
+        left: 0;
+        width: 248px;
+    }
+
+    #nav-content {
+        padding: 0;
+        margin-left: 36px;
     }
 
     .site-title {
-        margin: 3em 0em 1em 0em;
+        margin: 3.5em 0em 1em 0em;
         text-align: left;
     }
 
@@ -40,7 +44,7 @@
     }
 
     .article-content {
-        margin-top: 1.4em;
+        margin-top: 1.9em;
     }
 
     // CONTENT
@@ -49,8 +53,8 @@
     }
 
     .content-container {
-        max-width: 680px;
-        margin-left: 310px;
+        max-width: 672px;
+        margin-left: 318px;
         padding: 0 1.5em 0 0;
         height: 100%;
         display: flex;

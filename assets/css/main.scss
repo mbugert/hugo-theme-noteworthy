@@ -1,8 +1,17 @@
 /* VARIABLES ========================================================================== */
 
+// IDENTITY COLORS
+$col-1: #fc7300;
+$col-2: #ce4654;
+$col-3: #00a2b1;
+$col-4: #002d61;
+$col-5: #55b949;
+
+$col-1-darker: #ca6007;
+
 // COLORS
-$teal: #63BDA2;
-$teal-darker: #359377;
+$accentcolor: $col-1;
+$accentcolor-darker: $col-1-darker;
 $gray-background: #F7F7F7;
 $gray-table-border: #EEEEEE;
 $gray-lightest: #D2D2D2;
@@ -134,20 +143,20 @@ a:visited {
 
 .color-link {
     text-decoration: none;
-    color: $teal;
+    color: $accentcolor;
     font-family: $sans-serif;
     margin-right: 1.5em;
 }
 
 .color-link:visited {
-    color: $teal;
+    color: $accentcolor;
 }
 
 .color-link:hover {
-    color: $teal-darker;
+    color: $accentcolor-darker;
 
     .color-arrow {
-        fill: $teal-darker;
+        fill: $accentcolor-darker;
     }
 }
 
@@ -250,12 +259,15 @@ table {
 
 // TOP NAV
 nav {
-    padding: 0.25em 1.5em 1em 1.5em;
     max-width: 100%;
 }
 
+#nav-content {
+    padding: 0.25em 1.5em 1em 1.5em;
+}
+
 .site-title {
-    margin: 1.5em 0em 1em 0em;
+    margin: 1.9em 0em 1em 0em;
     text-align: center;
     line-height: 1.7em;
 
@@ -282,7 +294,7 @@ nav {
     font-style: italic;
     color: $gray-medium;
     text-align: center;
-    margin-bottom: 3.7em;
+    margin-bottom: 3em;
     margin-top: -0.75em;
 }
 
@@ -313,7 +325,7 @@ nav {
 
     a {
         text-decoration: none;
-        color: $teal;
+        color: $accentcolor;
         font-size: 0.95rem;
     }
 }
@@ -360,7 +372,7 @@ nav {
 // SHORTCODE CONTENT
 .twitter-tweet {
     font-family: $sans-serif !important;
-    border-left: 4px solid $teal !important;
+    border-left: 4px solid $accentcolor !important;
     color: $gray-dark !important;
     font-size: 1rem !important;
     font-style: italic !important;
@@ -501,6 +513,41 @@ footer {
     a:hover {
         color: $gray-medium;
     }
+}
+
+// IDENTITY BAR
+.identity-bar {
+    width: 100%;
+    height: 16px;
+    margin-bottom: -16px;
+    display: flex;
+}
+.identity-bar div {
+    display: inline-block;
+    flex: 1 0 auto;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.12);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.12);
+}
+.identity-bar div:nth-child(1) {
+    background-color: $col-1;
+    height: 10px;
+}
+.identity-bar div:nth-child(2) {
+    background-color: $col-2;
+    height: 15px;
+}
+.identity-bar div:nth-child(3) {
+    background-color: $col-3;
+    height: 16px;
+}
+.identity-bar div:nth-child(4) {
+    background-color: $col-4;
+    height: 15px;
+}
+.identity-bar div:nth-child(5) {
+    background-color: $col-5;
+    height: 2px;
 }
 
 // BREAKPOINTS
