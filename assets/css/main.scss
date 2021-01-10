@@ -355,16 +355,14 @@ figcaption {
     height: auto;
 }
 
-.footnote-ref {
-    a {
-        margin-left: 0.3em;
-    }
+a.footnote-ref {
+    margin-left: 0.3em;
 
-    a::before {
+    &::before {
         content: "[";
     }
 
-    a::after {
+    &::after {
         content: "]";
     }
 }
