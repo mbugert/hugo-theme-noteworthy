@@ -12,14 +12,19 @@
     {{ template "_internal/disqus.html" . }}
 
     {{ if .Site.Params.enableKofi }}
-
         <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
         <script type='text/javascript'>
             const kofiId = '{{ .Site.Params.Kofi }}';
             kofiwidget2.init('Support Me on Ko-fi', '#29abe0', kofiId);
             kofiwidget2.draw();
-        </script> 
+        </script>
+    {{ end }}
 
+    <!-- 1800 characters including spaces, at 4.7 average characters per English word => 1800 / (4.7 + 1) = 315, so let's go with 325 words minimum to trigger VG Wort -->
+    {{ if ge .WordCount 325 }}
+        {{ with .Params.vgwort }}
+            <img src="{{ . }}" width="1" height="1" alt="">
+        {{ end }}
     {{ end }}
 
     <div class="page-footer">
